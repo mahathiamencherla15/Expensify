@@ -16,32 +16,4 @@ firebase.analytics();
 
 const database = firebase.database();
 
-database.ref().set({
-    name: 'mata',
-    age: 22,
-    location: {
-        city: 'india'
-    }
-}).then(() => {
-    console.log('data saved!')
-}).catch((e) => {
-    console.log('fail af', e);
-})
-
-database.ref('attributes').set({
-    height: 169,
-    weight: 65
-}).then(() => {
-    console.log('savedd')
-}).catch((e) => {
-    console.log('fail', e)
-})
-
-// database.ref('location/city').remove()
-// .then(() => {
-//     console.log('removed')
-// }).catch((e) => {
-//     console.log('cannot')
-// })
-
-database.ref('attributes').set(null);
+export {firebase, database as default};
