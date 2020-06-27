@@ -3,7 +3,7 @@ import * as firebase from 'firebase';
 const firebaseConfig = {
     apiKey: process.env.FIREBASE_apiKey,
     authDomain: process.env.FIREBASE_authDomain,
-    databaseURL:process.env.FIREBASE_databaseURL,
+    databaseURL: "https://expensify-648f3.firebaseio.com",
     projectId: process.env.FIREBASE_projectId,
     storageBucket: process.env.FIREBASE_storageBucket,
     messagingSenderId: process.env.FIREBASE_messagingSenderId,
