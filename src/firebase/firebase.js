@@ -1,10 +1,9 @@
 import * as firebase from 'firebase';
-import 'firebase/database';
 
 const firebaseConfig = {
     apiKey: process.env.FIREBASE_apiKey,
     authDomain: process.env.FIREBASE_authDomain,
-    databaseURL: process.env.FIREBASE_databaseURL,
+    databaseURL:process.env.FIREBASE_databaseURL,
     projectId: process.env.FIREBASE_projectId,
     storageBucket: process.env.FIREBASE_storageBucket,
     messagingSenderId: process.env.FIREBASE_messagingSenderId,
@@ -13,6 +12,7 @@ const firebaseConfig = {
   };
 
 firebase.initializeApp(firebaseConfig);
+
 firebase.analytics();
 
 const database = firebase.database();
