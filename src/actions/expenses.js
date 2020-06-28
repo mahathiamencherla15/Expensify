@@ -61,7 +61,6 @@ export const setExpenses = (expenses) => ({
 });
 
 export const startSetExpenses = () => {
-  console.log('inside')
   return (dispatch) => {
     return database.ref('expenses').once('value').then((snapshot) => {
       const expenses = [];
