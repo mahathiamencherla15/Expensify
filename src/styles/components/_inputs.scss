@@ -11,6 +11,10 @@
   @extend .text-input;
   background: $google-blue;
   color: white;
+  cursor: pointer;
+  &:hover {
+    background-color: darken($google-blue, 10%);
+  }
 }
 
 .textarea {
